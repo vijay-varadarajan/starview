@@ -3,6 +3,8 @@ import './Navbar.css'
 import './Media.css'
 import { FaBars } from 'react-icons/fa';
 
+import { Link } from 'react-router-dom';
+
 const Navbar = ({ navbarStyle }) => {
   return (
     <header>

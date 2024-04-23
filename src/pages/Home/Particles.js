@@ -42,20 +42,20 @@ const ParticlesComponent = (props) => {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse",
+            mode: "push",
           },
           onHover: {
             enable: true,
-            mode: 'grab',
+            mode: 'repulse',
           },
         },
         modes: {
           push: {
-            distance: 200,
+            distance: 10,
             duration: 10,
           },
-          grab: {
-            distance: 100,
+          repulse: {
+            distance: 150,
           },
         },
       },
@@ -67,7 +67,7 @@ const ParticlesComponent = (props) => {
           color: "#FFFFFF",
           distance: 150,
           enable: true,
-          opacity: 0.3,
+          opacity: 0.4,
           width: 1,
         },
         move: {
@@ -84,7 +84,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 200,
+          value: 150,
         },
         opacity: {
           value: 1.0,

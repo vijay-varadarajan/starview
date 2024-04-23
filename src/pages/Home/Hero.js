@@ -47,7 +47,7 @@ const Hero = () => {
                 
                 <div id="get-started-div">
                     <div id="get-started-div-part-b">
-                        <a href="register.htm" id="schedule-btn-link">
+                        <a href="/register" id="schedule-btn-link">
                             <button className="get-started-btn">
                                 <div className="get-started-btn-div" id="get-started-btn-div"> <p>Get &nbsp;Started</p> </div>
                             </button>

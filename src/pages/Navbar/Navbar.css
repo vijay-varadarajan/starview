@@ -1,0 +1,58 @@
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px 20px 10px;
+    margin: 0px 0px 0px 0px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.85);
+    
+    transition: 0.2s ease;
+}
+
+#nav-links-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    margin: 0px 20px;
+}
+
+#navbar #logo-div a {
+    font-family: 'Foldit', cursive;
+    font-size: 1.8rem;
+    margin: 0px 0px 0px 5px;
+}
+
+#nav-links-div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#nav-links-div ul li {
+    margin: 0px 8px;
+}
+
+#nav-links-div ul li a {
+    color: rgba(255, 255, 255, 0.922);
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+#nav-links-div ul li a:hover {
+    color: rgba(255, 255, 255, 0.582);
+    cursor: pointer;
+}
