@@ -13,12 +13,33 @@ const Feedback = () => {
         setRating(index + 1)
     }
 
+    const feedbackSubmitHandler = (event) => {
+        event.preventDefault()
+
+        const feedbackForm = document.getElementById('feedbackForm')
+        const userComment = feedbackForm.userComment.value
+
+        if (rating === 0) {
+            alert('Please rate your experience.')
+            return
+        }
+
+        if (userComment === '') {
+            alert('Please provide feedback.')
+            return
+        }
+
+        alert('Feedback submitted successfully.')
+        feedbackForm.reset()
+        setRating(0)
+    }
+
   return (
     <>
         <Navbar />
         <div class="feedback-container">
             <h1>Feedback Form</h1>
-            <form id="feedbackForm">
+            <form id="feedbackForm" onSubmit={feedbackSubmitHandler}>
                 <div class="rating">
                     <label for="starRating">Rate your experience:</label>
                     <div class="stars" id="starRating">

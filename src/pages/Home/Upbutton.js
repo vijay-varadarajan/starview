@@ -6,7 +6,7 @@ import './Upbutton.css'
 const Upbutton = () => {
   return (
     <div className="scroll-to-top-btn">
-        <a href="#">
+        <a href="/#">
             <FaArrowUp />
         </a>
     </div>
