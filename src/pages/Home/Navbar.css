@@ -1,0 +1,57 @@
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    padding: 10px 20px 20px 10px;
+    margin: 0px 0px 0px 0px;
+    z-index: 1;
+
+    transition: 0.2s ease;
+}
+
+#nav-links-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top: 10px;
+}
+
+#navbar #logo-div h1 {
+    font-family: 'Foldit', cursive;
+    font-size: 1.7rem;
+    margin: 0px 0px 0px 0px;
+}
+
+#nav-links-div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#nav-links-div ul li {
+    margin: 0px 8px;
+}
+
+#nav-links-div ul li a {
+    color: rgba(255, 255, 255, 0.922);
+    font-size: 1.0rem;
+    margin: 0px 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 550;
+}
+#nav-links-div ul li a:hover {
+    color: rgba(255, 255, 255, 0.582);
+    cursor: pointer;
+}

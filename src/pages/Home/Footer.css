@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    
+    min-height: 20vh;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer #footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0px 0px 0px;
+    width: 90%;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,162 @@
+@media screen and (max-width: 772px) {
+
+    #navbar {
+        padding: 7px 10px 16px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-links-div a {
+        font-size: 0.8rem;
+        margin: 0px 5px;
+    }
+
+    #nav-links-div ul li {
+        margin: 0px 5px;
+    }
+
+    #landing {
+        flex-direction: column;
+    }
+    
+    #hero-pic {
+        width: 100%;
+        display: none;
+    }
+    
+    #hero {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    #hero-text {
+        margin: 0px 5% 0px 5%;
+    }
+
+    #hero-text h1 {
+        font-size: 4.2rem;
+        color: white;
+    }
+
+    #hero-text h2 {
+        font-size: 1.8rem;
+    }
+
+    #hero-text #intro-para {
+        font-size: 0.9rem;
+    }
+    
+    #get-started-div {
+        flex-direction: row;
+    }
+    
+    .get-started-btn-div {
+        margin: 10px 0px;
+    }
+        
+    #get-started-div-part-a {
+        width: 22%;
+    }
+    
+    #get-started-div-part-b {
+        width: 78%;
+    }
+
+    #schedule {
+        margin-top: 60px;
+    }
+
+    #schedule h1 {
+        font-size: 1.8rem;
+    }
+
+    #about-header {
+        margin-top: 60px;
+    }
+
+    #about-name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-company{
+        flex-direction: column-reverse;
+    }
+
+    #about-company-text {
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+
+    #about-company-links {
+        width: 110%;
+        margin: 0px 0px 10px 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #navbar {
+        padding: 7px 10px 16px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-links-div a {
+        font-size: 0.8rem;
+        margin: 0px 5px;
+    }
+
+    #landing {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    #hero-pic {
+        width: 100%;
+    }
+    
+    #hero {
+        width: 100%;
+    }
+    
+    #hero-text {
+        margin: 0px 5% 0px 5%;
+    }
+    
+    #hero-text h1 {
+        font-size: 4rem;
+    }
+    
+    #hero-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    #hero-text #intro-para {
+        font-size: 0.95rem;
+    }
+
+    .wide-only {
+        display: none;
+    }
+    
+    #get-started-div {
+        flex-direction: row;
+    }
+    
+    #get-started-btn-div {
+        margin: 10px 0px;
+    }
+    
+    #schedule h1 {
+        font-size: 1.4rem;
+    }
+}
+
