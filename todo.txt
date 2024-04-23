@@ -1,4 +1,3 @@
-Test scoring and display
-Content for test and course
+Content for course
 Hamburger menu
 Form validation
