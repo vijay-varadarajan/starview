@@ -5,7 +5,7 @@ import Navbar from './Navbar/Navbar'
 
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const Login = ({ submitHandler }) => {
   return (
     <>
     <Navbar />
@@ -13,19 +13,19 @@ const Login = () => {
         <div id="form-header">
             <h1>Login</h1>
         </div>
-        <form>
-            <div class="form-container">
-                <div class="form-top">
-                    <div class="form-col">
-                        <div class="form-row">
-                            <label for="username">Username: </label>
+        <form onSubmit={submitHandler}>
+            <div className="form-container">
+                <div className="form-top">
+                    <div className="form-col">
+                        <div className="form-row">
+                            <label htmlFor="username">Username: </label>
                             <input type="text" id="username" name="username" />
                         </div>
-                        <div class="form-row">
-                            <label for="password">Password: </label>
+                        <div className="form-row">
+                            <label htmlFor="password">Password: </label>
                             <input type="password" id="password" name="password" />
                         </div>
-                        <div class="form-row" id="forgot-pwd">
+                        <div className="form-row" id="forgot-pwd">
                             <a href="#">Forgot Password?</a>
                         </div>
                         <button type="submit" id="register-btn">SUBMIT</button>

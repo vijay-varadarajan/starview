@@ -3,10 +3,8 @@ import React from 'react'
 import PlanetRow from './PlanetRow'
 
 const PlanetsContent = () => {
-  const planetContent = {
-    
-  }
-
+  const planetContent = []
+  
   return (
     <>
       <PlanetRow planetPosition='left' image='Sun' content="Lorem ipsum" />

@@ -3,7 +3,7 @@ import React from 'react'
 import './Login.css'
 import Navbar from './Navbar/Navbar'
 
-const Signup = () => {
+const Signup = ({ submitHandler }) => {
   return (
     <>
     <Navbar />
@@ -11,24 +11,24 @@ const Signup = () => {
         <div id="form-header">
             <h1>Sign Up</h1>
         </div>
-        <form>
-            <div class="form-container">
-                <div class="form-top">
-                    <div class="form-col">
-                        <div class="form-row">
-                            <label for="username">Username: </label>
+        <form onSubmit={submitHandler}>
+            <div className="form-container">
+                <div className="form-top">
+                    <div className="form-col">
+                        <div className="form-row">
+                            <label htmlFor="username">Username: </label>
                             <input type="text" id="username" name="username" />
                         </div>
-                        <div class="form-row">
-                            <label for="email">Email: </label>
+                        <div className="form-row">
+                            <label htmlFor="email">Email: </label>
                             <input type="email" id="email" name="email" />
                         </div>
-                        <div class="form-row">
-                            <label for="password">Password: </label>
+                        <div className="form-row">
+                            <label htmlFor="password">Password: </label>
                             <input type="password" id="password" name="password" />
                         </div>
-                        <div class="form-row">
-                            <label for="confirm_password">Confirm Password: </label>
+                        <div className="form-row">
+                            <label htmlFor="confirm_password">Confirm Password: </label>
                             <input type="password" id="confirm_password" name="confirm_password" />
                         </div>
 
