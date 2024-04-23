@@ -32,7 +32,7 @@ const Signup = ({ submitHandler }) => {
         }
     
         // Pass the username and password to the submitHandler
-        submitHandler(username, email, password, confirmPassword);
+        submitHandler(username, password);
       }
 
   return (

@@ -248,8 +248,7 @@ const Register = ({ submitHandler }) => {
         setInterests([]);
         setPayment('');
 
-        // Display success message or redirect to another page
-        alert('Form submitted successfully');
+        submitHandler(username, password)
     };
 
     return (

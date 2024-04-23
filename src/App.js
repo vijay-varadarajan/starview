@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 import Home from './pages/Home';
 import Course from './pages/Course';
@@ -14,8 +15,7 @@ function App() {
     const navigate = useNavigate();
 
     // Call redirectToCourse() inside the submitHandler function
-    const loginSubmitHandler = (e) => {
-      e.preventDefault();
+    const loginSubmitHandler = (username, password) => {
       console.log('Submitted');
       navigate('/course');
     }
