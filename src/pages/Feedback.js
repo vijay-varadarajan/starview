@@ -37,12 +37,12 @@ const Feedback = () => {
   return (
     <>
         <Navbar />
-        <div class="feedback-container">
+        <div className="feedback-container">
             <h1>Feedback Form</h1>
             <form id="feedbackForm" onSubmit={feedbackSubmitHandler}>
-                <div class="rating">
-                    <label for="starRating">Rate your experience:</label>
-                    <div class="stars" id="starRating">
+                <div className="rating">
+                    <label htmlFor="starRating">Rate your experience:</label>
+                    <div className="stars" id="starRating">
                         {[...Array(5)].map((star, index) => {
                                 return index < rating ? (
                                     <FaStar key={index} onClick={() => handleStarClick(index)} />
@@ -53,8 +53,8 @@ const Feedback = () => {
                     </div>
                 </div>
 
-                <div class="comment">
-                    <label for="userComment">Comments:</label>
+                <div className="comment">
+                    <label htmlFor="userComment">Comments:</label>
                     <textarea id="userComment" name="userComment" rows="4" placeholder="Your feedback..."></textarea>
                 </div>
 

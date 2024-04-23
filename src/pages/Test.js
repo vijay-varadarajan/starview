@@ -11,7 +11,7 @@ const Test = () => {
 
   const evaluateTest = (e) => {
     e.preventDefault()
-    const answers = ['a', 'b', 'c', 'd', 'a', 'b', 'c', 'd', 'a', 'b']
+    const answers = ['b', 'a', 'a', 'a', 'a', 'c', 'b', 'c', 'a', 'b']
 
     let score = 0
     for (let i = 1; i <= 10; i++) {
