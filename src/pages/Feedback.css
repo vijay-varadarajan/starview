@@ -51,12 +51,12 @@ label {
 }
 
 .comment textarea {
-    width: 100%;
+    width: 150%;
     padding: 8px;
     margin-top: 5px;
 }
 
-button[type="submit"] {
-    width: 50%;
+#feedbackSubmitBtn {
+    width: auto;
     margin: 20px 0px;
 }
