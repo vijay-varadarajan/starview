@@ -7,7 +7,7 @@ import About from './Home/About'
 import Footer from './Home/Footer'
 import './Home.css'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
   const [navbarStyle, setNavbarStyle] = useState({
@@ -16,28 +16,38 @@ const Home = () => {
     borderBottom: 'none',
   });
 
+  const [showUpButton, setShowUpButton] = useState(false);
+
   const updateNavbar = () => {
-    if (window.scrollY > 600 || (window.innerWidth < 772 && window.scrollY > 1)) {
+    if (window.scrollY > 100 || (window.innerWidth < 772 && window.scrollY > 1)) {
       setNavbarStyle({
         backgroundColor: 'black',
         opacity: '0.9',
-        borderBottom: '1px solid rgba(255, 255, 255, 0.922)',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.422)',
       });
+      setShowUpButton(true);
     } else {
       setNavbarStyle({
         backgroundColor: 'transparent',
         opacity: '1',
         borderBottom: 'none',
       });
+      setShowUpButton(false);
     }
   };
 
-  window.addEventListener('scroll', updateNavbar);
+  useEffect(() => {
+    window.addEventListener('scroll', updateNavbar);
+    return () => {
+      window.removeEventListener('scroll', updateNavbar);
+    };
+  }, []);
+
 
   return (
     <>
         <Navbar navbarStyle={navbarStyle} />
-        <Upbutton />
+        {showUpButton && <Upbutton />}
         <Hero />
         <Schedule />
         <About />

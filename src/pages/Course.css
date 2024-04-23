@@ -19,3 +19,30 @@ img {
 #PlanetsContent div {
     min-height: 40vh;
 }
+
+#submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit-btn button {
+    font-family: 'Rubik Doodle Shadow', cursive;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.921);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(255, 255, 255, 0.922);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+#submit-btn button:hover {
+    background-color: rgba(255, 255, 255, 0.922);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.923);
+    border-radius: 10px;
+}

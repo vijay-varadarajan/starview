@@ -11,6 +11,9 @@ const Course = () => {
         <Navbar />
         <Hero />
         <PlanetsContent />
+        <div id="submit-btn">
+            <a href="/test"><button>Take a Test</button></a>
+        </div>
     </>
   )
 }
