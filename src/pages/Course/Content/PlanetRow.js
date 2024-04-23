@@ -15,7 +15,8 @@ const PlanetRow = ({ planetPosition, image, content }) => {
     <div style={style}>
         <img src={src} alt={image} height="300px"/>
         <p>
-            {image}{content}
+            <h3>{image}</h3>
+            {content}
         </p>
     </div>
   )

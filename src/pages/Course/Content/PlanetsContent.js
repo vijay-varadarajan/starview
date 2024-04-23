@@ -51,21 +51,23 @@ const PlanetsContent = () => {
       },
       {
         id: 'Eclipse',
-        image: '',
+        image: 'Eclipse',
         content: 'An eclipse occurs when one celestial body passes through the shadow of another, resulting in a temporary reduction or complete blocking of light. On Earth, there are two primary types of eclipses: solar and lunar. A solar eclipse transpires when the Moon passes between the Sun and Earth, casting a shadow on the Earth\'s surface and obscuring all or part of the Sun. Conversely, a lunar eclipse unfolds when Earth comes between the Sun and the Moon, causing Earth\'s shadow to fall on the Moon\'s surface. Solar eclipses are further categorized into total, partial, and annular, depending on the alignment of the three celestial bodies. These captivating celestial events have intrigued and fascinated humanity throughout history, often inspiring mythologies, cultural beliefs, and scientific inquiry. The rarity and visual spectacle of eclipses continue to captivate sky gazers worldwide, bringing people together to witness the awe-inspiring dance of the celestial bodies.'
       }
   ]
   
   return (
     <>
-      {planetContent.map(planet => (
-        <PlanetRow
-          key={planet.id}
-          planetPosition={planet.id === ('Sun' || 'Venus' || 'Mars' || 'Saturn' || 'Neptune') ? 'left' : 'right'}
-          image={planet.image}
-          content={planet.content}
-        />
-      ))}
+      <div id='PlanetsContent'>
+        {planetContent.map(planet => (
+          <PlanetRow
+            key={planet.id}
+            planetPosition={['Sun', 'Venus', 'Mars', 'Saturn', 'Neptune'].includes(planet.id) ? 'left' : 'right'}
+            image={planet.image}
+            content={planet.content}
+          />
+        ))}
+      </div>
     </>
   )
 }

@@ -1,3 +1,2 @@
-Content for course
 Hamburger menu
 Form validation

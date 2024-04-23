@@ -1,0 +1,21 @@
+img {
+    padding: 10px 40px 10px 40px;
+    height: 350px;
+}
+
+#PlanetsContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 120px 30px 120px;
+    width: 80%;
+    min-height: 110vh;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#PlanetsContent div {
+    min-height: 40vh;
+}
