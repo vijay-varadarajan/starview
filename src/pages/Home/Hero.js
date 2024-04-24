@@ -19,7 +19,6 @@ const Hero = () => {
     };
 
     useEffect(() => {
-        window.addEventListener('load', handleWindowResize);
         window.addEventListener('resize', handleWindowResize);
         return () => {
             window.removeEventListener('resize', handleWindowResize);
@@ -57,7 +56,7 @@ const Hero = () => {
                     <div id="get-started-div-part-a">
                         <a href="#schedule" id="get-started-btn-link">
                             <button className="get-started-btn" id="schedule-btn">
-                                <div className="get-started-btn-div" id="schedule-btn-div"> <p id="schedule-btn-div-text">{scheduleBtn}</p> </div>
+                                <div className="get-started-btn-div" id="schedule-btn-div"> <p id="schedule-btn-div-text">{window.innerWidth < 620 ? <MdKeyboardDoubleArrowDown/> : 'Schedule'}</p> </div>
                             </button>
                         </a>
                     </div>
