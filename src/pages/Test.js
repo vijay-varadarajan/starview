@@ -13,17 +13,17 @@ const Test = () => {
     e.preventDefault()
     const answers = ['b', 'a', 'a', 'a', 'a', 'c', 'b', 'c', 'a', 'b']
 
-    let score = 0
+    let temp_score = 0
     for (let i = 1; i <= 10; i++) {
       const answer = document.querySelector(`input[name="${i}"]:checked`)
       if (answer) {
         if (answer.value === answers[i - 1]) {
-          score++
+          temp_score++
         }
       }
     }
 
-    setScore(score)
+    setScore(temp_score)
     console.log(score)
 
     window.alert(`You scored ${score}/10`)

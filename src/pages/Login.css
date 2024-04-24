@@ -21,7 +21,8 @@ body {
 
 a {
     text-decoration: none;
-    color: whitesmoke
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -84,7 +85,7 @@ a {
 }
 
 #nav-links-div ul li {
-    margin: 0px 8px;
+    margin: 3px 8px;
 }
 
 #nav-links-div ul li a {
@@ -105,7 +106,7 @@ a {
     justify-content: center;
     flex-direction: column;
     min-height: 90vh;
-    margin-top: 25px;
+    margin-top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -323,7 +324,12 @@ button[type=submit]:hover {
 
 
 @media screen and (max-width: 767px) {
+    .nav-dropdown {
+        display: none;
+    }
+    
     #navbar {
+        display: block;
         padding: 10px 10px 10px 10px;
     }
 
@@ -332,7 +338,7 @@ button[type=submit]:hover {
     }
 
     #form-header {
-        margin: 40px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
     }
 
     .form-container {

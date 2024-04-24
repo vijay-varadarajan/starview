@@ -19,6 +19,7 @@ const Hero = () => {
     };
 
     useEffect(() => {
+        window.addEventListener('load', handleWindowResize);
         window.addEventListener('resize', handleWindowResize);
         return () => {
             window.removeEventListener('resize', handleWindowResize);

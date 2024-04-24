@@ -56,3 +56,36 @@
     color: rgba(255, 255, 255, 0.582);
     cursor: pointer;
 }
+
+#dropdown-menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    z-index: 1;
+    padding: 0px 0px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+#dropdown-list{
+    margin-top: 5px;
+    margin-left: -50px;
+    list-style: none;
+}
+
+@media screen and (max-width: 772px) {
+
+    #navbar {
+        padding: 7px 10px 16px 10px;
+        display: block;
+    }
+
+    #nav-links-div a {
+        font-size: 0.8rem;
+        margin: 0px 5px;
+    }
+
+    #nav-links-div ul li {
+        margin: 0px 5px;
+    }
+}

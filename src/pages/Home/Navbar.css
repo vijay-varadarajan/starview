@@ -41,7 +41,7 @@
 }
 
 #nav-links-div ul li {
-    margin: 0px 8px;
+    margin: 6px 8px;
 }
 
 #nav-links-div ul li a {
@@ -54,4 +54,24 @@
 #nav-links-div ul li a:hover {
     color: rgba(255, 255, 255, 0.582);
     cursor: pointer;
+}
+
+.dropdown-item {
+    margin: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-dropdown {
+        display: none;
+    }
+    
+    #navbar {
+        padding: 7px 10px 16px 10px;
+        display: block;
+    }
+
+    #nav-links-div a {
+        font-size: 0.8rem;
+        margin: 0px 5px;
+    }
 }

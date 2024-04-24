@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div id="about-name">
             <a href="home.htm"><h2>STARVIEW</h2></a>
-            <a href="#" id="schedule-btn-link">
+            <a href="https://github.com/vijay-varadarajan/starview" id="schedule-btn-link">
                 <button className="get-started-btn">
                     <div className="get-started-btn-div" id="get-started-btn-div"> <p>
                         <FaGithub />    
