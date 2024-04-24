@@ -29,9 +29,9 @@ const Navbar = ({ navbarStyle }) => {
                 </ul>
               )}
             </li>
-            <li><Link to="#" className="nav-link">Home</Link></li>
-            <li><Link to="#schedule" className="nav-link">Schedule</Link></li>
-            <li><Link to="#about" className="nav-link">About</Link></li>
+            <li><a href="#" className="nav-link">Home</a></li>
+            <li><a href="#schedule" className="nav-link">Schedule</a></li>
+            <li><a href="#about" className="nav-link">About</a></li>
           </ul>
         </div>
       </nav>
